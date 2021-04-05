@@ -1,7 +1,7 @@
 <html>
   <body>
     <div class="container">
-      <h2>CNN Project 1 Predictor</h2>
+      <h2>CNN Project - Seedling Predictor from Image</h2>
       <form (ngSubmit)="func(myForm)" #myForm="ngForm">
         Select the file:
         <input type="file" name="ipData" id="ipData" value="{{ipData}}" (change)="fileChanged($event)" ngModel>
@@ -11,10 +11,10 @@
         <img #selectedImage id="img" src="{{url}}" alt="image" height="150" width="150" *ngIf="url!=null">
       </div>
       <div style="margin: 50px;" *ngIf="predictedFlower!=null">
-        <h3>Predicted Flower: {{predictedFlower}}</h3>
+        <h3>Predicted Seedling: {{predictedFlower}}</h3>
       </div>
       <div>
-        download sample images from <a href="https://www.kaggle.com/c/plant-seedlings-classification/data" target="_blank">link</a> 
+        P.S: Download sample images from this<a href="https://www.kaggle.com/c/plant-seedlings-classification/data" target="_blank">link</a>. Overall accuracy:79%
       </div>
     </div>
   </body>
