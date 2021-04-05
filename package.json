@@ -1,6 +1,7 @@
 {
   "name": "cnnapp1",
   "version": "0.0.0",
+  "main":"main.js",
   "scripts": {
     "ng": "ng",
     "start": "node server.js",
